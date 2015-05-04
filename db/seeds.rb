@@ -26,5 +26,6 @@ require 'factory_girl_rails'
 
   c = Campaign.create(subject: Faker::Company.catch_phrase, body: Faker::Lorem.paragraph )
   u.campaigns << c
+  u.save
 end
 
