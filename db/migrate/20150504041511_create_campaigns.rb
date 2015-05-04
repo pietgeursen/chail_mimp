@@ -1,8 +1,8 @@
 class CreateCampaigns < ActiveRecord::Migration
   def change
     create_table :campaigns do |t|
-      t.text :subject
-      t.string :body
+      t.string :subject
+      t.text :body
       t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false
